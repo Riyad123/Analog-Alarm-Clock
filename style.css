@@ -1,0 +1,345 @@
+* {
+   margin:0;
+    padding:0;
+    border:0;
+}
+#bg{
+    height:780px;
+    width:961px;
+    background: url(image/4.jpg); 
+    margin-top: 10px
+}
+#mainbody{
+    height:125px
+}
+#clock{
+    width:300px;
+    height:300px;
+    background-color: rgb(255, 255, 255);
+    border: 15px solid #74737B;
+    border-radius: 50%;
+    box-shadow: 0 0 50px  #e8dbdb;
+    position:absolute;
+    margin-left:130px;
+    margin-top:10px;
+    padding-left:25px;
+    
+}
+.num{
+    height:100%;
+    position: absolute;
+    left: calc(50% - 0.5em);
+    
+}
+.num{
+    width:1em;
+    line-height:.8em;
+    color: brown;
+    text-align: center;
+    vertical-align: middle;
+    font-size:20px;
+}
+.num1{
+   transform: rotate(30deg);
+}
+.num1 div{
+    transform: rotate(-30deg);
+}
+.num2{
+   transform: rotate(60deg);
+}
+.num2 div{
+    transform: rotate(-60deg);
+}
+.num3{
+   transform: rotate(90deg);
+}
+.num3 div{
+    transform: rotate(-90deg);
+}
+.num4{
+   transform: rotate(120deg);
+}
+.num4 div{
+    transform: rotate(-120deg);
+}
+.num5{
+   transform: rotate(150deg);
+}
+.num5 div{
+    transform: rotate(-150deg);
+}
+.num6{
+   transform: rotate(180deg);
+}
+.num6 div{
+    transform: rotate(-180deg);
+}
+.num7{
+   transform: rotate(210deg);
+}
+.num7 div{
+    transform: rotate(-210deg);
+}
+.num8{
+   transform: rotate(240deg);
+}
+.num8 div{
+    transform: rotate(-240deg);
+}
+.num9{
+   transform: rotate(270deg);
+}
+.num9 div{
+    transform: rotate(-270deg);
+}
+.num10{
+   transform: rotate(300deg);
+}
+.num10 div{
+    transform: rotate(-300deg);
+}
+.num11{
+   transform: rotate(-30deg);
+}
+.num11 div{
+    transform: rotate(30deg);
+}
+.num12{
+   transform: rotate(0deg);
+}
+.num12 div{
+    transform: rotate(-0deg);
+}
+#sc-hand{
+  width:2px;
+    height:50%;
+   background-color: red;
+    transform-origin: 50% 80%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left:-1px;
+    z-index:100
+}
+#mn-hand{
+  width:26px;
+  height:40%;
+background: url(image/12.png);
+    transform-origin: 50% 80%;
+    position: absolute;
+    top: 18.1%;
+    left: 46%;
+   z-index:80;
+}
+#hr-hand{
+  width:26px;
+height:25%;
+   background: url(image/10.png);
+    transform-origin: 50% 80%;
+    position: absolute;
+    top:29.6%;
+    left: 46%;
+    z-index:70;
+}
+#b{
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    position: absolute;
+    left: 48.5%;
+    top:48.2%;
+    background-color:rgb(207, 234, 116);
+    box-shadow: 0 0   #000000;
+    border-style:inset;
+    z-index:200
+}
+.alarmSection{
+    width:600px;
+    height:400px;
+    position:relative;
+    top:380px
+}
+#time{
+    width:100%;
+    text-align:center;
+    font-size:40px;
+}
+form{
+    width:100%;
+    margin-top:20px;
+    margin-left:130px
+}
+#hrs{
+    font-size:20px;
+    width:40px;
+  background-color: #000000;
+    margin-left:4px;
+    color: aliceblue;
+    text-align:center;
+    height:40px;
+    
+}
+ #min{
+    font-size:20px;
+    width:40px;
+    background-color: #000000;
+    color: #ffffff;
+     height:40px;
+     text-align:center;
+}  
+form p{
+    float: left;
+    font-size:20px;
+    width:118px;
+    text-align: center;
+    background-color: #d1d1d1;
+    margin-top:4px;
+    margin-right:5px;
+    padding:5px 0px;
+    -webkit-box-shadow: inset 0px 0px 63px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 63px -1px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 63px -1px rgba(0,0,0,0.75);
+    
+}
+#sighnal{
+    width:80%;
+    height:auto;
+    font-family:fantasy;
+    text-align:center;
+    font-size:30px;
+    background-color: bisque;
+    border-radius:10px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+#set{
+       width:80%;
+    height:auto;
+
+    text-align:center;
+    font-size:30px;
+    background-color: #cdf5bb;
+    border-radius:10px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+#button{
+     font-size:20px;
+    width:118px;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+     transition:.3s;
+    cursor:pointer;
+    height:35px;
+    margin-left:5px;
+    -webkit-box-shadow: inset 0px 0px 63px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 63px -1px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 63px -1px rgba(0,0,0,0.75);
+}
+#button:hover{
+     background:#336956;
+    color:white;
+}
+/*------------start alarm clock-------*/
+
+#alrmclock{
+    width:70px;
+    height:85px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #a7a880;
+    border-radius: 50%;
+    box-shadow: 0 0 5px  #e8dbdb;
+    position:absolute;
+    margin-left:94px;
+    margin-top:175px;
+    padding-left:25px;
+    
+}
+.nu{
+    height:100%;
+    position: absolute;
+    left: calc(50% - 0.5em);
+    
+}
+.nu{
+    width:1em;
+    line-height:.8em;
+    color: brown;
+    text-align: center;
+    vertical-align: middle;
+    font-size:20px;
+}
+.nu1{
+   transform: rotate(90deg);
+}
+.nu1 div{
+    transform: rotate(-90deg);
+}
+.nu2{
+   transform: rotate(180deg);
+}
+.nu2 div{
+    transform: rotate(-180deg);
+}
+.nu3{
+   transform: rotate(270deg);
+}
+.nu3 div{
+    transform: rotate(-270deg);
+}
+.nu4{
+   transform: rotate(360deg);
+}
+.nu4 div{
+    transform: rotate(-360deg);
+}
+#m-hand{
+  width:2px;
+  height:40%;
+    background-color:#21eb19;
+    transform-origin: 50% 80%;
+    position: absolute;
+    top: 18.1%;
+    left: 47%;
+   
+}
+#h-hand{
+  width:4px;
+height:28%;
+  background-color:#0a6965;
+    transform-origin: 50% 80%;
+    position: absolute;
+    top:27%;
+    left: 47%;
+    margin-left:px;  
+}
+#ac{
+    height:8px;
+    width:8px;
+    border-radius:50%;
+    position: absolute;
+    left: 44%;
+    top:46%;
+    background-color:rgb(3, 3, 3);
+    box-shadow: 0 0   #000000;
+    border-style:inset;
+}
+
+#loading{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background:#ffffff;
+    z-index: 99999;
+    width:100%;
+    text-align:center;
+}
+#loading img{
+    position:relative;
+    width:60%;
+}
